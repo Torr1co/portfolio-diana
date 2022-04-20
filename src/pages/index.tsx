@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import MetaTags from "../components/MetaTags";
 import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import About from "../components/About";
@@ -12,6 +12,7 @@ const Home = () => {
   const [image, setImage] = useState("/img/mountain.png");
   return (
     <>
+      <MetaTags />
       <NavBar />
       <div className=" h-screen w-screen fixed -z-10 overflow-hidden bg-primary">
         <Image
